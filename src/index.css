@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, .font-display {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #0f172a;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  height: 36px;
+  letter-spacing: 0.15px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  transition: background-color .15s, border-color .15s, box-shadow .15s;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gsi-material-button:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 16px;
+  width: 16px;
+  min-width: 16px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-document-area,
+  #printable-document-area * {
+    visibility: visible;
+  }
+  #printable-document-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

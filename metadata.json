@@ -1,0 +1,8 @@
+{
+  "name": "New Royal Decorators — Ceiling, POP & Interior ERP",
+  "description": "Complete Indian GST billing, digital contractor site measurement sheet, BOM, quotation, and project profitability system for New Royal Decorators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
